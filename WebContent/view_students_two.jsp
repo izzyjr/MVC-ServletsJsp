@@ -5,9 +5,13 @@
 <h2>Student Table Demo</h2>
 <hr>
 <br/>
+
+<%! int number = 1; %>
+
 	<table border="1">
 	
 		<tr>
+			<th>#</th>
 			<th>First Name</th>
 			<th>Last Name</th>
 			<th>Email</th>
@@ -16,6 +20,7 @@
 		<c:forEach var="tempStudent" items="${student_list}">
 		
 			<tr>
+				<td><%= number++ %></td>
 				<td>${tempStudent.firstName}</td>
 				<td>${tempStudent.lastName}</td>
 				<td>${tempStudent.email}</td>
