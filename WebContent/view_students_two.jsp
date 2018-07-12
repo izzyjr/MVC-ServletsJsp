@@ -20,7 +20,7 @@
 		<c:forEach var="tempStudent" items="${student_list}">
 		
 			<tr>
-				<td><%= number++ %></td>
+				<td><%= number++ %><td>
 				<td>${tempStudent.firstName}</td>
 				<td>${tempStudent.lastName}</td>
 				<td>${tempStudent.email}</td>
